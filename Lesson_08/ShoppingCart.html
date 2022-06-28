@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="margin-left: 20px">Gaming Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mouse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Headset</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Keyboards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Cart
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search for item...">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div style="background-size:cover">
+
+    </div>
+    <img src="https://www.wirerealm.com/wp-content/uploads/2017/08/the-best-gaming-gear-1024x419.jpg" alt="banner"
+        style="width:100%; height: 200px;object-fit: cover;">
+    <br>
+    <h1 style="padding-left: 50px;">Cart</h1>
+    <br>
+    <div style="padding-left: 20px;padding-right: 20px">
+        <table class="table table-hover" border="1" style="text-align: center">
+            <thead>
+                <tr>
+                    <th scope="col">IMAGE</th>
+                    <th scope="col">PRODUCT</th>
+                    <th scope="col">PRICE</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">TOTAL</th>
+                    <th scope="col">ACTION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <img src="https://m.media-amazon.com/images/I/41yHprHE16L._AC_SL1024_.jpg" alt="item1"
+                            style="height: 150px;object-fit: cover">
+                    </th>
+                    <td>Logicool G PRO Gaming Mouse</td>
+                    <td>¥12,255</td>
+                    <td>
+                        <input type="number" name="quantity_of_item1" id="quantity_of_item1" value="1" disabled>
+                    </td>
+                    <td>¥12,255</td>
+                    <td>
+                        <button type="button" class="btn btn-warning" onclick="dropItem()">DELETE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <img src="https://m.media-amazon.com/images/I/61DDG2zaTOL._AC_SL1500_.jpg" alt="item2"
+                            style="height: 150px;object-fit: cover">
+                    </th>
+                    <td>e-Element Mechanical Keyboard</td>
+                    <td>¥3,599</td>
+                    <td>
+                        <input type="number" name="quantity_of_item1" id="quantity_of_item1" value="2" disabled>
+                    </td>
+                    <td>¥7,198</td>
+                    <td>
+                        <button type="button" class="btn btn-warning" onclick="dropItem()">DELETE</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div style="padding-left: 20px">
+        <button type="button" class="btn btn-primary">Update Cart</button>
+        <button type="button" class="btn btn-danger">Drop All Items In Cart</button>
+    </div>
+    <div style="float: left;padding-left: 30px;margin-top:20px;text-align: left;">
+        <h5>Coupon</h5>
+        <div class="form-group">
+            <label class="form-label mt-2">Enter coupon number to have a discount!</label>
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Coupon Number" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary" type="button" id="button-addon2">Submit</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <div style="float: right;padding-right: 50px;text-align: center;width: 400px;">
+        <h3 style="margin-right: 40px"><u>CART TOTALS</u></h3>
+        <div class="card border-primary mb-5" style="max-width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">SUBTOTAL: ¥19,453</h5>
+              <h5 class="card-title">Shipping: ¥1,000</h5>
+              <br>
+              <h6 class="card-title">No Discount Available</h6>
+              <br>
+              <h5 class="card-title">TOTAL: ¥20,453</h5>
+              <button type="button" class="btn btn-primary btn-lg">Checkout</button>
+            </div>
+          </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function dropItem() {
+        // TODO
+    }
+</script>

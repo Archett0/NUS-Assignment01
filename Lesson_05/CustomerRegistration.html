@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="MyStyles.css">
+</head>
+
+<body>
+    <div class="centered-items">
+        <img src="https://www.newzealand.com/assets/Operator-Database/0996298744/img-1578656664-3860-7607-p-D222E5F6-CF5A-1736-AFBC5A5558CA4F20-2544003__aWxvdmVrZWxseQo_CropResizeWzk0MCw1MzAsNzUsImpwZyJd.jpg"
+            alt="Travel Agency Pic" style="width: 30%">
+    </div>
+    <form action="mailto:mickeylyc@outlook.com" method="post" class="centered-table">
+        <table style="width: 25%;text-align: center;border:1px solid black;">
+            <tr>
+                <td><span>Username:</span></td>
+                <td><input type="text" name="username" id="username" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Password:</span>
+                </td>
+                <td>
+                    <input type="password" name="password" id="username" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Confirm password:</span>
+                </td>
+                <td>
+                    <input type="password" name="confirm_password" id="confirm_password" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Age:</span>
+                </td>
+                <td>
+                    <input type="number" name="age" id="age" max="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Gender:</span>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="radio1" value="Male">Male
+                    <input type="radio" name="gender" id="radio2" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Membership type:</span>
+                </td>
+                <td>
+                    <input type="radio" name="membership" id="radio3" value="Normal">Normal
+                    <input type="radio" name="membership" id="radio4" value="Gold">Gold
+                    <input type="radio" name="membership" id="radio5" value="Diamond">Diamond
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Subscript to promotional email ?</span>
+                </td>
+                <td>
+                    <input type="checkbox" name="subscription" id="subscription">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="reset">Reset</button>
+                </td>
+                <td>
+                    <button type="submit">Register</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+<footer>
+    <h6><a href="#">Privacy</a></h6>
+</footer>
+
+</html>

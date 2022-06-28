@@ -1,0 +1,9 @@
+.centered-items {
+    text-align: center;
+}
+
+.centered-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

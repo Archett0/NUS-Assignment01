@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="Validation.js"></script>
+</head>
+
+<body>
+    <div class="centered-table">
+        <table style="width: 30%;text-align: left;">
+            <tr>
+                <td><span>Name:</span></td>
+                <td><input type="text" name="username" id="username"></td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Age:</span>
+                </td>
+                <td>
+                    <input type="text" name="age" id="age">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Gender:</span>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="radio1" value="Male">Male
+                    <input type="radio" name="gender" id="radio2" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Phone:</span>
+                </td>
+                <td>
+                    <input type="number" name="phone" id="phone" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Hobbies:</span>
+                </td>
+                <td>
+                    <input type="checkbox" name="hobbies" id="hobbies1" value="reading">Reading
+                    <input type="checkbox" name="hobbies" id="hobbies2" value="sports">Sports
+                    <input type="checkbox" name="hobbies" id="hobbies3" value="movies">Movies
+                    <input type="checkbox" name="hobbies" id="hobbies4" value="travelling">Travelling
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="validateForm()">Submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Output:
+                </td>
+                <td>
+                    <textarea name="output" id="output" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Errors:
+                </td>
+                <td>
+                    <textarea name="errors" id="errors" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
+<style>
+    .centered-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    table {
+        table-layout: fixed;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+</style>

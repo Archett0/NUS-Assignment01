@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function getReferenceTable() {
+            document.writeln('<table border="1" style="width: 30%;text-align: center;">' +
+                ' <tr style="background-color:lightgray;"> <td>x</td> <td>x^2</td>' +
+                ' <td>1/x</td> <td>x^(1/2)</td> </tr>');
+            for (let x = 1; x <= 5; x++) {
+                var currentX = parseFloat(x);
+                document.writeln('<tr>');
+                document.writeln('<td>' + currentX + '</td>');
+                document.writeln('<td>' + Math.pow(currentX, 2) + '</td>');
+                var tmp1 = (Number.isInteger(1.0 / currentX)) ? (1.0 / currentX) : (1.0 / currentX).toFixed(3);
+                document.writeln('<td>' + tmp1 + '</td>');
+                var tmp2 = (Number.isInteger(Math.sqrt(currentX))) ? (Math.sqrt(currentX)) : Math.sqrt(currentX).toFixed(3);
+                document.writeln('<td>' + tmp2 + '</td>');
+                document.writeln('</tr>');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="generate" onclick="getReferenceTable()">
+</body>
+
+</html>
